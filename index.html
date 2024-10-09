@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Spelling Game</h1>
+        <div id="status-bar">
+            <p>Wins: <span id="win-count">0</span></p>
+            <p>Fails: <span id="fail-count">0</span></p>
+            <p>Words Left: <span id="words-left">0</span></p>
+        </div>
+
+        <div id="definition-box">
+            <p id="definition-text"></p>
+        </div>
+
+        <input type="text" id="word-input" placeholder="Enter the word..." autofocus>
+        <button id="submit-button">Submit</button>
+
+        <div id="feedback"></div>
+        
+        <audio id="win1" src="sounds/win1.mp3"></audio>
+        <audio id="win2" src="sounds/win2.mp3"></audio>
+        <audio id="win3" src="sounds/win3.mp3"></audio>
+        <audio id="win4" src="sounds/win4.mp3"></audio>
+        <audio id="win5" src="sounds/win5.mp3"></audio>
+        <audio id="win6" src="sounds/win6.mp3"></audio>
+        <audio id="sad1" src="sounds/sad1.mp3"></audio>
+        <audio id="sad2" src="sounds/sad2.mp3"></audio>
+        <audio id="sad3" src="sounds/sad3.mp3"></audio>
+        <audio id="sad4" src="sounds/sad4.mp3"></audio>
+        <audio id="end1" src="sounds/end1.mp3"></audio>
+    </div>
+
+    <!-- Load the external words list -->
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
